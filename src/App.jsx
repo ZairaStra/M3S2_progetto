@@ -12,7 +12,7 @@ function App() {
       <WeatherNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="Details" element={<Details />} />
+        <Route path="details/:cityName" element={<Details />} />
       </Routes>
       <WeatherFooter />
     </BrowserRouter>

@@ -1,7 +1,9 @@
+import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 const Details = () => {
-  <Container fluid className="main"></Container>;
+  /*   const { cityName } = useParams();
+  return <Container fluid className="main" />; */
 };
 
 export default Details;

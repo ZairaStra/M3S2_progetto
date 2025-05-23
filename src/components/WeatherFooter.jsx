@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const WeatherFooter = () => {
   return (
-    <footer className="mt-2 py-3 footer bars-style">
+    <footer className="mt-2  footer bars-style">
       <Container fluid>
         <Row className="justify-content-center mt-5">
           <Col xs={12} md={6}>

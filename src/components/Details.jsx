@@ -1,5 +1,7 @@
+import { Container } from "react-bootstrap";
+
 const Details = () => {
-  <div></div>;
+  <Container fluid className="main"></Container>;
 };
 
 export default Details;

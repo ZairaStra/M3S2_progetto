@@ -30,3 +30,17 @@ body {
 .bars-style a:hover {
   text-decoration: underline;
 }
+
+.main {
+  height: calc(100vh - 10rem);
+  overflow-y: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  z-index: 1000;
+}

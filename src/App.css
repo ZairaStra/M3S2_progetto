@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a {
+  color: rgb(59, 59, 86) !important;
+  font-family: "Noto Sans Display";
+}
+
+body {
+  background-color: rgb(190, 212, 211);
+}
+
+.bars-style {
+  background-color: rgb(177, 213, 212) !important;
+}
+
+.bars-style a {
+  text-decoration: none;
+}
+
+.bars-style a:hover {
+  text-decoration: underline;
+}

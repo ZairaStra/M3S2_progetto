@@ -271,15 +271,27 @@ const Details = () => {
                         })
                       ).values(),
                     ].map((item) => (
-                      <ListGroup.Item key={item.dt} className="d-flex justify-content-between align-items-center bars-style">
-                        <p>
-                          <strong>{item.day}</strong> -{item.main.temp}°C – {item.weather[0].description}
-                        </p>
-                        <img
-                          src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
-                          alt={item.weather[0].description}
-                          style={{ width: "50px" }}
-                        />
+                      <ListGroup.Item key={item.dt} className="bars-style">
+                        <Row className="justify-content-between">
+                          <Col>
+                            <p>
+                              <strong>{item.day}</strong>
+                            </p>
+                          </Col>
+                          <Col>
+                            <p>{item.main.temp}°C</p>
+                          </Col>
+                          <Col>
+                            <p>{item.weather[0].description}</p>
+                          </Col>
+                          <Col className="text-end">
+                            <img
+                              src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
+                              alt={item.weather[0].description}
+                              style={{ width: "50px" }}
+                            />
+                          </Col>
+                        </Row>
                       </ListGroup.Item>
                     ))}
                   </ListGroup>
@@ -293,7 +305,7 @@ const Details = () => {
   );
 };
 
-//API per nome di città ricevuto dal form in Homepage
+//API per nome di città ricevuto dal form in Homepage - non finita come quella per lat/long
 
 /* const Details = () => {
   const { cityName } = useParams();
